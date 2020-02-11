@@ -1,0 +1,4 @@
+2020-02-11 21:03:07,932 [INFO] from play.api.Play in main - Application started (Prod)
+2020-02-11 21:03:08,409 [ERROR] from play.core.server.NettyServer in main - Failed to listen for HTTP on /0.0.0.0:9000!
+2020-02-11 21:03:30,895 [INFO] from play.api.Play in main - Application started (Prod)
+2020-02-11 21:03:31,175 [INFO] from play.core.server.NettyServer in main - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
