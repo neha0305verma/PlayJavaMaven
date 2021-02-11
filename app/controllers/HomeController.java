@@ -1,6 +1,10 @@
 package controllers;
 
+import static net.logstash.logback.argument.StructuredArguments.keyValue;
+
 import com.fasterxml.jackson.databind.JsonNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import play.mvc.*;
 
 //import views.html.*;  
@@ -9,6 +13,7 @@ import play.mvc.*;
  * @author myfear
  */
 public class HomeController extends Controller {
+    private Logger logger;
 
     /**
      * An action that renders an HTML page with a welcome message. The
@@ -19,6 +24,9 @@ public class HomeController extends Controller {
      * @return
      */
     public Result index() {
+        logger = LoggerFactory.getLogger(this.getClass());
+        logger.info("test hello info 123", keyValue("name", "value"));
+        System.out.println("print hello test");
         return ok("It works!");
     }
 
